@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+  <link rel="stylesheet" href="login.css">
+  <div class="Home"><a href="welcome.html"><i class="fa-solid fa-backward"></i></a></dive>
+<script src="https://kit.fontawesome.com/7ac9749b66.js" crossorigin="anonymous"></script>
+<script src="/js/authen.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</header>
+
+<body>
+  <!-- background of search page -->
+  <div class="bg textcenter">
+
+    <h2 class="searchtitle" > Search for <br> train schedule </h2>
+
+    <!-- the top part of search box -->
+    <article class="roundborderbox">
+      <div class="navbar">
+        Search Fields 
+      </div>
+
+      <hr class="solid"> <br>
+
+      <!-- the below part of search box(e.g. search criteria) -->
+      <form action="javascript:search()" id="search-form">
+        <div class="inline">
+          <select name="start" id="destation" class="rcorners">
+              <option value="" selected> Origin station </option>
+              <option value="Bangkok"> Bangkok </option>
+              <option value="Hua Hin"> Hua Hin</option>
+              <option value="Phetchaburi"> Phetchaburi</option>
+              <option value="Surat Thani"> Surat Thani</option>
+              <option value="Ayutthaya"> Ayutthaya</option>
+          </select>
+      </div>
+
+      <select name="end" id="terstation" class="rcorners">
+          <option value="" selected> Destination station </option>
+          <option value="Bang Sue"> Bang Sue </option>
+          <option value="Ban Krut"> Ban Krut</option>
+          <option value="Bang Sapan Yai"> Bang Sapan Yai</option>
+          <option value="Surat Thani"> Surat Thani</option>
+          <option value="Penang"> Penang</option>
+          <option value="Surat Thani"> Surat Thani</option>
+          <option value="Koh Samui"> Koh Samui</option>
+          <option value="Nong Khai"> Nong Khai</option>
+          <option value="Khon Kaen"> Khon Kaen</option>
+          <option value="Chiang Mai"> Chiang Mai</option>
+      </select>
+        <!-- Terminal station input part -->
+        <input type="date" name="traveldate" class="rcorners" id="datesearch">
+        <!-- search button --> <br>
+        <button type="submit" id="searchbutton" class="searchbutton"> Search </button>
+        <br><br>
+      </form>
+
+    </article>
+    <br><br><br><br><br><br><br>
+  </div>
+
+  <!-- area to show the search result -->
+  <div id="search_result">
+  </div>
+
+
+</body>
+
+
+<!--footer part-->
+<footer id="contact"><!--id for hyper link-->
+</footer>
+
+</html>

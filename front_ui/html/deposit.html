@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <link rel="stylesheet" href="login.css">
+  <div class="Home"><a href="welcome.html"><i class="fa-solid fa-backward"></i></a></dive>
+  </button>
+  <script src="https://kit.fontawesome.com/7ac9749b66.js" crossorigin="anonymous"></script>
+  <script src="/js/authen.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deposit</title>
+</header>
+
+<body>
+  <!-- background of search page -->
+  <div class="bg textcenter">
+
+    <!-- <h2 class="searchtitle" > Search for <br> train schedule </h2> -->
+    <h2 class="searchtitle" > Deposit money </h2>
+
+    <!-- the top part of search box -->
+    <article class="roundborderbox">
+      <div class="navbar">
+        Deposit input 
+      </div>
+
+      <hr class="solid"> <br>
+
+      <!-- the below part of search box(e.g. search criteria) -->
+      <form action="javascript:deposit()" id="search-form" >
+        <div class="inline">
+          <select name="start" id="methods" class="rcorners" onchange="getCard()">
+              <option value="" selected> Payment method </option>
+              <option value="Mobile banking"> Mobile banking </option>
+              <option value="7/11"> Convenience store </option>
+              <option value="Credit card"> Credit card </option>
+          </select>
+        </div>
+        <div class="inline" id="creditcardnum"> </div>
+
+        <div class="inline">
+          <input type="text" placeholder="Enter Amount" name="amount" id="amountmoney"class="rcorners" style="text-align: center">
+        </div>
+        <button type="submit" id="searchbutton" class="searchbutton"> Confirm </button>
+        <br><br>
+      </form>
+
+    </article>
+    <br><br><br><br><br><br><br>
+  </div>
+
+  <div id="deposit_result">
+  </div>
+
+
+</body>
+
+</html>
